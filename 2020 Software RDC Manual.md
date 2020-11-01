@@ -1,4 +1,7 @@
-# 2020 RDC Software Manual
+# 2020 Software RDC Manual
+
+[![hackmd-github-badge](https://hackmd.io/og1hBVPbRuGOlBkYGiZj3Q/badge)](https://hackmd.io/og1hBVPbRuGOlBkYGiZj3Q)
+
 
 ## Objective
 
