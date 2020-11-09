@@ -108,7 +108,7 @@ Here is a list of things that are planned to be implemented as new features. The
 * Note that the Emulator may consume a lot energy, so it is recommended that you connect to a power source when using it.
 
 
-## Reporting Bugs and Issues
+## Reporting Bugs and Issues 🐞
 
 Please report bugs or issues related to the Emulator through [Github Issues](https://github.com/HKUST-Robocon/Emulator-Release/issues) or through WhatsApp. (Don't use the RDC Q&A Google Form for this.)
 
