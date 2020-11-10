@@ -14,11 +14,11 @@ Go to the [releases](https://github.com/HKUST-Robocon/Emulator-Release/releases)
 
 If you're on Windows, you're good to go.  
 If you're on macOS, drag the application into the Applications folder before opening it. On newer versions of macOS, you'll need to allow access to your documents. This is because the Emulator needs to run the compiled executable. 
-
 If you're on Linux, open the terminal and run 
 ````
-"./RDC_Emulator.sh".   
+./RDC_Emulator.sh  
 ````
+
 ### Emulator GUI 🖼
 
 Here is the general layout of the Emulator:
