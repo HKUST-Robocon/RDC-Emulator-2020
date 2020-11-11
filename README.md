@@ -13,7 +13,11 @@ Please click the **Watch** indicator at the top right. We recommend you select *
 Go to the [releases](https://github.com/HKUST-Robocon/Emulator-Release/releases) page and download the compressed file appropriate to your OS. Then uncompress the file.
 
 If you're on Windows, you're good to go.  
-If you're on macOS, drag the application into the Applications folder before opening it. On newer versions of macOS, you'll need to allow access to your documents. This is because the Emulator needs to run the compiled executable.
+If you're on macOS, drag the application into the Applications folder before opening it. On newer versions of macOS, you'll need to allow access to your documents. This is because the Emulator needs to run the compiled executable.    
+If you're on Linux, open the terminal and run 
+````
+./RDC_Emulator.sh  
+````
 
 ### Emulator GUI 🖼
 
@@ -48,7 +52,7 @@ Some features have not been implemented yet. Scroll down to the Road Map to see 
 Communication between your code and the Emulator relies on standard input and standard output (you can think of these as `scanf` and `printf` respectively). To debug, use the  `emdebug()` function provided in the starter code. This will print to the Logger.
 
 #### Compiler
-A local compiler is used to compile your code. On Windows, gcc is used. On macOS, clang is used.
+A local compiler is used to compile your code. On Windows and Linux, gcc is used. On macOS, clang is used.
 
 You can check if you have a certain compiler by opening the terminal or command-line and entering `gcc -v` or `clang -v`. If you don't have the appropriate compiler installed in your directory, read the instructions below.
 
@@ -85,6 +89,17 @@ xcode-select --install
 ```
 
 You'll be asked confirm and agree with a license.
+
+#### Linux / gcc
+
+Open the terminal and enter the following command: 
+
+```
+sudo apt-get install gcc
+```
+
+You'll be asked for your password.
+
 
 ### Road Map 🗺
 
