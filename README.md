@@ -125,14 +125,20 @@ Here is a list of things that are planned to be implemented as new features. The
 
 ## Reporting Bugs and Issues 🐞
 
-Please report bugs or issues related to the Emulator through [Github Issues](https://github.com/HKUST-Robocon/Emulator-Release/issues) or through WhatsApp. (Don't use the RDC Q&A Google Form for this.)
+If you encounter any potential bugs or issues related to the Emulator, please first make sure that it's not a problem on your side.
+
+1. Check that your compiler exists and can be called globally (`gcc -v` / `clang -v`).
+2. Check with your teammates (using the same OS) and see if they can reproduce the problem. If they couldn't, it's likely that it's a problem on your machine.
+3. Ask your mentors about it. They could give some advice.
+
+If you've done the above and are unable to solve it, then please report the problem through [Github Issues](https://github.com/HKUST-Robocon/Emulator-Release/issues) or through WhatsApp. (Don't use the RDC Q&A Google Form for this.)
 
 When reporting, please:
 
-* Describe the issue clearly.
+* Describe clearly the issue.
     * What steps did you take? (Buttons pressed, etc.)
     * Can you reproduce it?
     * Does the bug randomly occur?
 * Include any relevant screenshots.
-* Paste the output from the logger, if relevant.
+* Paste any relevant output from the logger.
 * State which **OS** you're using, and your **compiler version** (you can check this by using `gcc -v`, or if you're on macOS: `clang -v`, although it shouldn't really make a difference).
