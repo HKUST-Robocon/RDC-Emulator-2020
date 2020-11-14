@@ -107,6 +107,7 @@ Here is a list of things that are planned to be implemented as new features. The
 
 #### v1.1 (Nov. 23)
 * Throwing Mechanism
+* Advanced Camera Configuration (Vertical Angle, Height from Ground)
 * Seeding
 * Motor/Sensor Noise
 
