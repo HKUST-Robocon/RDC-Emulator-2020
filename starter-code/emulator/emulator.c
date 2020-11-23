@@ -103,6 +103,7 @@ void emwrite(int code, ...)
     printcase(5, "REQUESTVAR %d")
     printcase(10, "GRAB %d")
     printcase(11, "THROW")
+    printcase(13, "CONFIGCAM %d %f")
     printcase(100, "STOPINIT")
     default: break;
     }
