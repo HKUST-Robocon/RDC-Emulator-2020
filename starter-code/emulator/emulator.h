@@ -25,6 +25,7 @@ typedef struct _BMP BMP;    //  Forward declaration of the BMP struct.
  * the value was successfully read.
  */
 bool emread_int(int* value);
+bool emread_grab_code(int array[3]);
 bool emread_camera(BMP** bmp);  //  Allocates memory into bmp! Make sure you call BMP_Free when you finish using the bitmap!
 bool emread_line_sensor(int* id, bool* value);
 bool emread_ir_sensor(int* id, bool* value);

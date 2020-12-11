@@ -50,6 +50,12 @@ bool emread_int(int* value)
     return true;
 }
 
+bool emread_grab_code(int array[3])
+{
+    if (!rdln()) return false;
+    if (!parse("%d %d %d", 3, &array[0], &array[1], &array[2])) return false;
+    return true;
+}
 
 bool emread_camera(BMP** bmp)
 {
@@ -86,7 +92,6 @@ bool emread_magnetic_sensor(int* id, int* value)
     return true;
 }
 
-
 #define printcase(num, fmt) case num: vsnprintf(buffer[buffsz++], PRINT_BUFFER_LENGTH, fmt, args); break;
 void emwrite(int code, ...)
 {
@@ -102,8 +107,10 @@ void emwrite(int code, ...)
     printcase(4, "REQUEST %d")
     printcase(5, "REQUESTVAR %d")
     printcase(10, "GRAB %d")
-    printcase(11, "THROW")
+    printcase(11, "PLACE %d")
     printcase(13, "CONFIGCAM %d %f")
+    printcase(20, "TMLOAD %.6f")
+    printcase(21, "TMTHROW")
     printcase(100, "STOPINIT")
     default: break;
     }
@@ -132,6 +139,7 @@ void emsend(void)
 {
     for (uint8_t i = 0; i < buffsz; i++)
         printf("%s\n", buffer[i]);
+    printf("ENDTURN\n");
     fflush(stdout);
 
     buffsz = 0;
